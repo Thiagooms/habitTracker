@@ -2,7 +2,7 @@ package com.habitTracker.ArchitectureClean.infra.gateway;
 
 import com.habitTracker.ArchitectureClean.core.domain.Habito;
 import com.habitTracker.ArchitectureClean.core.gateway.IHabitoGateway;
-import com.habitTracker.ArchitectureClean.infra.persistence.HabitoJpaEntity;
+import com.habitTracker.ArchitectureClean.infra.persistence.repository.entity.HabitoJpaEntity;
 import com.habitTracker.ArchitectureClean.infra.persistence.mapper.HabitoMapper;
 import com.habitTracker.ArchitectureClean.infra.persistence.repository.IHabitoRepository;
 import org.springframework.stereotype.Component;

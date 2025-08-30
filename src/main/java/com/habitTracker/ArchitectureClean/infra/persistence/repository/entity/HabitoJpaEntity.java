@@ -1,4 +1,4 @@
-package com.habitTracker.ArchitectureClean.infra.persistence;
+package com.habitTracker.ArchitectureClean.infra.persistence.repository.entity;
 
 import com.habitTracker.ArchitectureClean.core.enums.Frequencia;
 import jakarta.persistence.*;

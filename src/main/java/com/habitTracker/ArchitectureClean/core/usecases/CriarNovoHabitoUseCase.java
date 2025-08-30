@@ -7,14 +7,12 @@ import com.habitTracker.ArchitectureClean.core.gateway.IHabitoGateway;
 public class CriarNovoHabitoUseCase {
 
     private final IHabitoGateway habitoGateway;
-    private Input input;
 
     public CriarNovoHabitoUseCase(IHabitoGateway habitoGateway) {
         this.habitoGateway = habitoGateway;
     }
 
     public Output execute(Input input) {
-        this.input = input;
         Habito novoHabito = new Habito(
                 null,
                 input.titulo(),

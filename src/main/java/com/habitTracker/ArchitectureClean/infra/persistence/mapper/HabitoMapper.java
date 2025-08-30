@@ -1,7 +1,7 @@
 package com.habitTracker.ArchitectureClean.infra.persistence.mapper;
 
 import com.habitTracker.ArchitectureClean.core.domain.Habito;
-import com.habitTracker.ArchitectureClean.infra.persistence.HabitoJpaEntity;
+import com.habitTracker.ArchitectureClean.infra.persistence.repository.entity.HabitoJpaEntity;
 import org.springframework.stereotype.Component;
 
 @Component

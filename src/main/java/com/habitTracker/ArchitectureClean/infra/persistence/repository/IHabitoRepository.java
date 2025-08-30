@@ -1,6 +1,6 @@
 package com.habitTracker.ArchitectureClean.infra.persistence.repository;
 
-import com.habitTracker.ArchitectureClean.infra.persistence.HabitoJpaEntity;
+import com.habitTracker.ArchitectureClean.infra.persistence.repository.entity.HabitoJpaEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
