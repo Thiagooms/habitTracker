@@ -5,7 +5,8 @@
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=java,spring,docker,postgres,maven&theme=light" />
+    <img src="https://skillicons.dev/icons?i=java,spring,postgres,maven,docker,html,
+css,javascript&theme=light" />
   </a>
 </p>
 
@@ -16,20 +17,44 @@ Este projeto adota a Clean Architecture para separar claramente as regras de neg
 ---
 
 ## AS FUNCIONALIDADES ATUALMENTE SÃO:
+* `Criar uma nova pessoa.`
+* `Listar todas as pessoas cadastradas.`
 * `Criar um novo hábito para uma pessoa existente.`
 * `Listar todos os hábitos de uma pessoa específica.`
 
 ---
 
-![img.png](src/main/resources/static/img.png)
+![img.png](src/main/resources/static/images/img.png)
 
 ---
 
-![img_3.png](src/main/resources/static/img_3.png)
+![img_3.png](src/main/resources/static/images/img_3.png)
 
 ---
+## ENPOINTS DA API
+### Criar uma Nova Pessoa
 
-## Criar um Novo Hábito
+* `Endpoint: POST /api/pessoas`
+* `Descrição: Cria uma nova pessoa no sistema.`
+* `Corpo da Requisição (JSON):`
+    ```json
+    {
+        "nome": "Maria Silva"
+    }
+    ```
+* #### Resposta de sucesso (201 created):
+
+    ```json
+    {
+      "pessoa": {
+        "id": 1,
+        "nome": "Maria Silva"
+        }
+    }
+    ```
+
+---
+### Criar um Novo Hábito
 
 * `Endpoint: POST /api/habitos`
 * `Descrição: Cria um novo hábito associado a uma pessoa.`
@@ -56,7 +81,7 @@ Este projeto adota a Clean Architecture para separar claramente as regras de neg
     ```
 ---
 
-## Listar Hábitos de uma Pessoa
+### Listar Hábitos de uma Pessoa
 
 * `Endpoint: GET /api/habitos/por-pessoa/{pessoaId}`
 * `Descrição: Retorna uma lista com todos os hábitos de uma pessoa específica`

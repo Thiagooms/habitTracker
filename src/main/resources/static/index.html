@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker - Pessoas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Gerenciar Pessoas</h1>
+
+    <form id="form-criar-pessoa" class="form-section">
+        <h2>Criar Nova Pessoa</h2>
+        <div class="form-group">
+            <label for="input-nome-pessoa">Nome:</label>
+            <input type="text" id="input-nome-pessoa" placeholder="Digite o nome da pessoa" required>
+        </div>
+        <button type="submit">Salvar Pessoa</button>
+    </form>
+
+    <div class="list-section">
+        <h2>Pessoas Cadastradas</h2>
+        <ul id="lista-pessoas">
+        </ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
